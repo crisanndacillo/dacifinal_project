@@ -1,0 +1,130 @@
+
+
+body{
+    background: rgb(243, 185, 185);
+}
+/* .container{
+  position: fixed;
+  background-repeat: no-repeat;
+} */
+#NAME{
+  font-family:"Italic";
+  font-size: 20px;
+
+}
+nav{
+background-color:rgba(112, 38, 90, 0.233);
+}
+img{
+   width: 100%;
+    
+}
+ion-icon {
+    font-size: 35px;
+}
+.section{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    /* vh - viewport height */
+    display: flex;
+    /* flex para ma dispaly ang text*/
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   }
+/*  footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+   }
+   .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+   }
+
+   /* screencast*/
+ nav .fa {
+    display: none;
+  }
+  
+  @media(max-width: 700px){
+    .text-box h1{
+      font-size: 20px;
+    }
+    .nav-links ul li{
+      display: block;
+    }
+    .nav-links{
+      position: absolute;
+      background: gray;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-links ul{
+      padding: 30px;
+    }
+
+    /* para sa icon */
+  }
+
+  ion-icon {
+    font-size: 25px;
+  }
+
+  /* navbar */
+  .navbar-link{
+     color: white;
+      }
+
+ .nav-link::after{
+       content: '';
+       width: 0%;
+       height: 2px;
+       background: gray;
+       display: block;
+       margin: auto;
+       transition: 0.5s;
+ }
+ .nav-link:hover::after{
+       width: 100%;
+ }
+
+  /* ABOUT ME */
+ #about{
+  width: 100%;
+}
+#obj{
+  font-style:"italic";
+}
+.card-title{
+  font-style: "Tahoma";
+}
+#info{
+  font-style:"italic";
+
+}
+/* Project */
+
+#project{
+  width: 10%;
+} 
+
+#projects{
+  background-image: url(../Image/pc.jpg);
+}
